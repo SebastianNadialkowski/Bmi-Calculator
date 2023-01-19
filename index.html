@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <script defer src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body class="body">
+
+  <div class="container">
+    <div class="bmi">
+      <h1>poznaj swoje bmi</h1>
+      <form class="form">
+        <label>
+          wzrost w cm:
+        </label>
+        <input class="form__input" type=number min="50" name="cm" max="220" required><br>
+        <label span class="label__weight">
+          waga w kg:
+        </label>
+        <input class="form__input" type=number name="kg" min="20" max="300" required><br>
+        <label>wybierz płeć:</label>
+       <div> <input type="radio" name="gender" value="K" required>
+        <label for="K">K</label>
+        <input type="radio" name="gender" value="M" required>
+        <label for="M">M</label></div><br>
+        <button class="button">OBLICZ</button>
+      </form>
+    </div>
+    <div class="bmi">
+      <h1>jakie masz bmi?</h1>
+      mniej niż 16 - wygłodzenie<br>
+      16 - 16.99 - wychudzenie<br>
+      17 - 18.49 - niedowaga<br>
+      18.5 - 24.99 - prawidłowa<br>
+      25 - 29.99 - nadwaga<br>
+      30 - 34.99 - I stopień otyłości<br>
+      35 - 39.99 - II stopień otyłości<br>
+      powyżej 40 - otyłość skrajna<br>
+    </div>
+    <div class="bmi bmi__readme">
+      <h1>czym jest BMI?</h1>
+      BMI jest jednym z ważnych wskaźniów określających nasz stan fizyczny, ale niestety nie wystarczającym.<br>
+      Bardzo ważnym uzupełnieniem BMI jest wskaźnik ilości tłuszczu brzusznego - zbyt duży może oznaczać niebezpieczną
+      otyłość brzuszną i to nawet przy prawidłowym BMI!<br>
+      Ponadto, paradoksalnie, badania naukowe wskazują, że osoby z lekką nadwagą zwykle są zdrowsze i żyją dłużej od
+      osób z tzw. "prawidłową wagą".
+    </div>
+    <div class="bmi bmi__readme">
+      <h1>pamiętaj!</h1>
+      Kalkulator BMI obrazuje przybliżoną zawartość tłuszczu w organiźmie.<br> W przypadku niektórych osób wskaźnik
+      BMI
+      może sugerować błędne wnioski.<br> Osoby aktywne fizycznie, uprawiający sport, mogą posiadać zawyżoną wagę
+      związaną
+      z tkanką mięśniową a nie z ilością tłuszczu w organiźmie.<br> Ponadto nie zaleca się stosowania wskaźnika BMI do
+      oznaczania wagi ciała dla dzieci do ok. 14 roku życia oraz dla kobiet w ciąży.
+    </div>
+  </div>
+</body>
