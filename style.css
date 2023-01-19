@@ -47,7 +47,8 @@ html {
 }
 
 .bmi__readme {
-    min-height: 250px;
+    max-width:350px;
+    min-height: 300px;
     padding-left: 30px;
 }
 
