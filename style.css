@@ -10,7 +10,8 @@ html {
     background-image: url(img/background.jpg);
     background-size:cover;
     font-family: 'Poppins', sans-serif;
-
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 .container {
@@ -20,8 +21,6 @@ html {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
-    text-transform: uppercase;
 }
 
 .bmi {
@@ -35,6 +34,7 @@ html {
     padding:10px;
     min-width: 350px;
     min-height: 300px;
+    cursor: pointer;
     transition-property: background-color color;
     transition-duration: 1s;
 }
@@ -43,12 +43,17 @@ html {
     background-color: hsl(36, 100%, 50%);
     color: black;
     transform: scale(105%);
+}
+
+
+.bmi__list {
+    line-height: 2.1;
     
 }
 
 .bmi__readme {
     max-width:350px;
-    min-height: 350px;
+    min-height: 300px;
     padding-left: 30px;
 }
 
@@ -56,6 +61,7 @@ html {
     display:flex;
     flex-direction:column;
     align-items: center;
+    line-height: 1.2;
 }
 
 .form__input {
