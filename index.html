@@ -18,24 +18,22 @@
   <div class="container">
     <div class="bmi">
       <h1>poznaj swoje bmi</h1>
-      <form class="form">
+      <form class="form js-form">
+       
         <label>
-          wzrost w cm:
+          wzrost w metrach:
         </label>
-        <input class="form__input" type=number min="50" name="cm" max="220" required><br>
+        <input class="form__input js-height" type=number step="0.1" min="0.1" name="m" max="2.2" required><br>
+       
         <label span class="label__weight">
-          waga w kg:
+          waga w kilogramach:
         </label>
-        <input class="form__input" type=number name="kg" min="20" max="300" required><br>
-        <label>wybierz płeć:</label>
-        <div> <input type="radio" name="gender" value="K" required>
-          <label for="K">K</label>
-          <input type="radio" name="gender" value="M" required>
-          <label for="M">M</label>
-        </div><br>
-        <button class="button">OBLICZ</button>
-        <p></p>
-        Twoje bmi wynosi :
+        <input class="form__input js-weight" type=number name="kg" min="20" max="300" required><br>
+    
+        <button class="button">OBLICZ</button><p>
+        twoje bmi wynosi:
+        <p class="js-result">
+        
       </form>
     </div>
     <div class="bmi">
