@@ -18,6 +18,7 @@ html {
     max-width: 1000px;
     margin: 20px auto;
     display: flex;
+    
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -32,7 +33,7 @@ html {
     flex-direction: column;
     align-items: center;
     padding:10px;
-    min-width: 350px;
+    min-width: 400px;
     min-height: 300px;
     cursor: pointer;
     transition-property: background-color color;
@@ -40,8 +41,7 @@ html {
 }
 
 .bmi:hover {
-    background-color: hsl(36, 100%, 50%);
-    color: black;
+    background-color: hsla(187, 79%, 35%, 0.881);
     transform: scale(105%);
 }
 
@@ -52,7 +52,7 @@ html {
 }
 
 .bmi__readme {
-    max-width:350px;
+    max-width:400px;
     min-height: 300px;
     padding-left: 30px;
 }
@@ -66,12 +66,9 @@ html {
 
 .form__input {
     border:none;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
-.form__radio {
-    display:flex;
-}
 
 .form__result {
 font-size: 20px;
