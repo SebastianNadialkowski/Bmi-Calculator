@@ -73,6 +73,9 @@ html {
     display:flex;
 }
 
+.form__result {
+font-size: 20px;
+}
 
 .button {
     border: none;
