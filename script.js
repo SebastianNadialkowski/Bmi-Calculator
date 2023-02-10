@@ -1,8 +1,17 @@
 {
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+        const heightElement = document.querySelector(".js-height");
+        const weightElement = document.querySelector(".js-weight");
+        const height = +heightElement.value;
+        const weight = +weightElement.value;
+        calculateResult(height, weight);
+    }
     const calculateResult = (height, weight, result) => {
         const resultElement = document.querySelector(".js-result");
         result = weight / (height * height / 10000);
         resultElement.innerText = `${result.toFixed(2)}`;
+        
         if (result <= 16) {
             document.getElementById("result").innerHTML = "wygłodzenie";
         } else if (result >= 16 && result <= 16.99) {
@@ -20,14 +29,6 @@
         } else if (result >= 40 && result <= 999999) {
             document.getElementById("result").innerHTML = "otyłość skrajna";
         }
-    }
-    const onFormSubmit = (event) => {
-        event.preventDefault();
-        const heightElement = document.querySelector(".js-height");
-        const weightElement = document.querySelector(".js-weight");
-        const height = +heightElement.value;
-        const weight = +weightElement.value;
-        calculateResult(height, weight);
     }
 
     const init = () => {
