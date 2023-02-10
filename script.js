@@ -8,6 +8,7 @@
             const weight = +weightElement.value;
             result = weight / (height * height / 10000);
             resultElement.innerText = `${result.toFixed(2)}`;
+            
             if (result <= 16) {
                 document.getElementById("result").innerHTML = "wygłodzenie";
             } else if (result >= 16 && result <= 16.99) {
